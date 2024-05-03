@@ -37,12 +37,12 @@ print(data.describe())
 # plt.show()
 
 # Pair plot to examine relationships among numerical features
-sns.pairplot(filtered_data)
+sns.pairplot(data)
 plt.show()
 
 # Analyse categorical variables using boxplots
 for column in ['sex', 'smoker', 'region']:
-    sns.boxplot(x=column, y='charges', data=filtered_data)
+    sns.boxplot(x=column, y='charges', data=data)
     plt.title(f"Charges vs {column}")
     plt.show()
 
