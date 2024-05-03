@@ -118,7 +118,7 @@ def display_data_info():
 def create_scatter_plot():
     data = load_data()
     if data is not None:
-        plt.scatter(data['age'], data['charges'])
+        plt.scatter(data['age'], data['charges']) # Can change as needed
         plt.xlabel("Age")
         plt.ylabel("Charges")
         plt.title("Age vs Charges")
